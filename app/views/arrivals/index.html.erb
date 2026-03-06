@@ -1,0 +1,55 @@
+<div class="page-container">
+
+  <h1 class="page-title">Great Portland Street - Next Tube Arrivals</h1>
+
+  <% if @arrivals.blank? %>
+    <p>No arrival information available.</p>
+  <% else %>
+
+    <table class="arrivals-table">
+
+      <thead>
+      <tr>
+        <th>Platform</th>
+        <th>Line</th>
+        <th>Destination</th>
+        <th class="due-header">Due</th>
+      </tr>
+      </thead>
+
+      <tbody>
+
+      <% @arrivals.each do |platform, trains| %>
+        <% trains.each_with_index do |train, index| %>
+
+          <tr>
+
+            <% if index == 0 %>
+              <td rowspan="<%= trains.size %>" class="platform-cell">
+                <strong><%= platform %></strong>
+                <div class="train-count">
+                  <%= pluralize(trains.size, "train") %>
+                </div>
+              </td>
+            <% end %>
+
+            <td><%= train[:line] %></td>
+            <td><%= train[:destination] %></td>
+            <td class="due-cell"><%= train[:due_in] %></td>
+
+          </tr>
+
+        <% end %>
+      <% end %>
+
+      </tbody>
+
+    </table>
+
+    <p class="footnote">
+      Trains are displayed by platform and ordered by the next arriving train.
+    </p>
+
+  <% end %>
+
+</div>
