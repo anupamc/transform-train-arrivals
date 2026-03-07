@@ -21,9 +21,7 @@
 
       <% @arrivals.each do |platform, trains| %>
         <% trains.each_with_index do |train, index| %>
-
           <tr>
-
             <% if index == 0 %>
               <td rowspan="<%= trains.size %>" class="platform-cell">
                 <strong><%= platform %></strong>
@@ -36,9 +34,7 @@
             <td><%= train[:line] %></td>
             <td><%= train[:destination] %></td>
             <td class="due-cell"><%= train[:due_in] %></td>
-
           </tr>
-
         <% end %>
       <% end %>
 

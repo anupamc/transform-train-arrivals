@@ -1,6 +1,6 @@
 class ArrivalsFormatter
   def initialize(arrivals)
-    @arrivals = arrivals
+    @arrivals ||= arrivals
   end
 
   def formatted
