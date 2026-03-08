@@ -10,10 +10,22 @@ Displays next tube arrivals for Great Portland Street.
 
 ## Setup
 
-git clone <repo>
-cd transform_tube
-bundle install
-rails server
+```bash
+git clone git@github.com:anupamc/transform-train-arrivals.git  
+cd transform-train-arrivals  
+```
+
+Run the setup script:
+
+```bash
+bin/setup
+```
+
+Start the application:
+
+```bash
+bin/rails server
+```
 
 Visit:
 http://localhost:3000

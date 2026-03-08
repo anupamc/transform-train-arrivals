@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 require "fileutils"
 
-# path to your application root.
 APP_ROOT = File.expand_path("..", __dir__)
 
 def system!(*args)
@@ -9,17 +8,21 @@ def system!(*args)
 end
 
 FileUtils.chdir APP_ROOT do
-  # This script is a way to set up or update your development environment automatically.
-  # This script is idempotent, so that you can run it at any time and get an expectable outcome.
-  # Add necessary setup steps to this file.
-
   puts "== Installing dependencies =="
   system! "gem install bundler --conservative"
   system("bundle check") || system!("bundle install")
 
-  puts "\n== Removing old logs and tempfiles =="
+  puts "\n== Cleaning logs and temp files =="
   system! "bin/rails log:clear tmp:clear"
 
-  puts "\n== Restarting application server =="
-  system! "bin/rails restart"
+  puts "\n== Verifying Rails boots =="
+  system! "bin/rails runner 'puts \"Rails booted successfully\"'"
+
+  puts "\n== Running test suite =="
+  system! "bundle exec rspec"
+
+  puts "\n✅ Setup complete"
+  puts "Run the application with:"
+  puts "  bin/rails server"
+  puts "Then visit http://localhost:3000"
 end

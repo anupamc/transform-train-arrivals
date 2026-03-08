@@ -17,11 +17,13 @@ RSpec.describe "Arrivals", type: :request do
 
     it "returns http success" do
       get "/"
+
       expect(response).to have_http_status(:ok)
     end
 
     it "renders the arrivals view" do
       get "/"
+
       expect(response.body).to include("Great Portland Street - Next Tube Arrivals")
     end
   end

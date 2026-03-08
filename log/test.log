@@ -1,48 +1,80 @@
-Started GET "/" for 127.0.0.1 at 2026-03-06 23:55:25 +0000
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:22:20 +0000
 Processing by ArrivalsController#index as HTML
 []
   Rendering layout layouts/application.html.erb
   Rendering arrivals/index.html.erb within layouts/application
-  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 498)
-  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 6643)
-Completed 200 OK in 42ms (Views: 34.9ms | Allocations: 10168)
-Started GET "/" for 127.0.0.1 at 2026-03-06 23:55:25 +0000
-Processing by ArrivalsController#index as HTML
-[]
-  Rendering layout layouts/application.html.erb
-  Rendering arrivals/index.html.erb within layouts/application
-  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
-  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 435)
-Completed 200 OK in 1ms (Views: 1.1ms | Allocations: 851)
-Started GET "/" for 127.0.0.1 at 2026-03-06 23:57:12 +0000
-Processing by ArrivalsController#index as HTML
-[]
-  Rendering layout layouts/application.html.erb
-  Rendering arrivals/index.html.erb within layouts/application
-  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 498)
-  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3212)
-Completed 200 OK in 14ms (Views: 9.0ms | Allocations: 6738)
-Started GET "/" for 127.0.0.1 at 2026-03-06 23:57:12 +0000
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 6170)
+Completed 200 OK in 45ms (Views: 28.4ms | Allocations: 12369)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:22:20 +0000
 Processing by ArrivalsController#index as HTML
 []
   Rendering layout layouts/application.html.erb
   Rendering arrivals/index.html.erb within layouts/application
   Rendered arrivals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
-  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 435)
-Completed 200 OK in 1ms (Views: 1.1ms | Allocations: 851)
-Started GET "/" for 127.0.0.1 at 2026-03-06 23:57:21 +0000
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 435)
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 850)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:38:04 +0000
 Processing by ArrivalsController#index as HTML
 []
   Rendering layout layouts/application.html.erb
   Rendering arrivals/index.html.erb within layouts/application
-  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 498)
-  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3213)
-Completed 200 OK in 13ms (Views: 8.2ms | Allocations: 6738)
-Started GET "/" for 127.0.0.1 at 2026-03-06 23:57:21 +0000
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3212)
+Completed 200 OK in 28ms (Views: 16.0ms | Allocations: 6732)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:38:04 +0000
 Processing by ArrivalsController#index as HTML
 []
   Rendering layout layouts/application.html.erb
   Rendering arrivals/index.html.erb within layouts/application
   Rendered arrivals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
-  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 435)
-Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 435)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 851)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:42:38 +0000
+Processing by ArrivalsController#index as HTML
+[]
+  Rendering layout layouts/application.html.erb
+  Rendering arrivals/index.html.erb within layouts/application
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 3212)
+Completed 200 OK in 38ms (Views: 24.4ms | Allocations: 6732)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:42:39 +0000
+Processing by ArrivalsController#index as HTML
+[]
+  Rendering layout layouts/application.html.erb
+  Rendering arrivals/index.html.erb within layouts/application
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 440)
+Completed 200 OK in 1ms (Views: 1.1ms | Allocations: 856)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:42:52 +0000
+Processing by ArrivalsController#index as HTML
+[]
+  Rendering layout layouts/application.html.erb
+  Rendering arrivals/index.html.erb within layouts/application
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3211)
+Completed 200 OK in 16ms (Views: 10.6ms | Allocations: 6736)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:42:52 +0000
+Processing by ArrivalsController#index as HTML
+[]
+  Rendering layout layouts/application.html.erb
+  Rendering arrivals/index.html.erb within layouts/application
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 435)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 851)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:43:05 +0000
+Processing by ArrivalsController#index as HTML
+[]
+  Rendering layout layouts/application.html.erb
+  Rendering arrivals/index.html.erb within layouts/application
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3210)
+Completed 200 OK in 16ms (Views: 10.6ms | Allocations: 6735)
+Started GET "/" for 127.0.0.1 at 2026-03-08 12:43:05 +0000
+Processing by ArrivalsController#index as HTML
+[]
+  Rendering layout layouts/application.html.erb
+  Rendering arrivals/index.html.erb within layouts/application
+  Rendered arrivals/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 435)
+Completed 200 OK in 1ms (Views: 0.9ms | Allocations: 851)
