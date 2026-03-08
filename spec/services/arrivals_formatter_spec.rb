@@ -6,17 +6,17 @@ RSpec.describe ArrivalsFormatter do
       { "platformName" => "Platform 1",
         "destinationName" => "Brixton",
         "lineName" => "Victoria",
+        "timeToStation" => 120 },
+
+      { "platformName" => "Platform 1",
+        "destinationName" => "Aldgate",
+        "lineName" => "Circle",
         "timeToStation" => 60 },
 
       { "platformName" => "Platform 2",
         "destinationName" => "Walthamstow",
         "lineName" => "Victoria",
-        "timeToStation" => 10 },
-
-      { "platformName" => "Platform 1",
-        "destinationName" => "Aldgate",
-        "lineName" => "Circle",
-        "timeToStation" => 120 }
+        "timeToStation" => 10 }
     ]
   end
 
@@ -27,7 +27,7 @@ RSpec.describe ArrivalsFormatter do
 
   it "sorts arrivals by time" do
     formatted = described_class.new(arrivals).formatted
-    first_train = formatted["Platform 1"].first
-    expect(first_train[:destination]).to eq("Brixton")
+    first_train = formatted["Platform 2"].first
+    expect(first_train[:destination]).to eq("Walthamstow")
   end
 end
